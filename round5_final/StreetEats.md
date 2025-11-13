@@ -1,8 +1,3 @@
-NETS 2130 - StreetEats Old Doc
-Chat 5 Echo: https://drive.google.com/file/d/1UUbgB_RolO0yh7CzOSfWL0YXpdU6vvCE/view?usp=sharing
- 
-
-
 # Final Project Proposal: StreetEats
 
 **Team Name**: Team 7
@@ -17,7 +12,7 @@ Chat 5 Echo: https://drive.google.com/file/d/1UUbgB_RolO0yh7CzOSfWL0YXpdU6vvCE/v
 
 | Name | PennKey | Primary Role(s) | Secondary Skills |
 |------|---------|----------------|------------------|
-| Braden Johnson | bradenj | [e.g., Frontend Dev, UI/UX] | [e.g., Python, Data Analysis] |
+| Braden Johnson | bradenj | Full-Stack | API Integration |
 | Jackson Gold | jgold23 | [e.g., Backend Dev, API Integration] | [e.g., JavaScript, Database Design] |
 | Simon Roling | rolings | [ML/Data] | [Front end] |
 | Eitan Gotian | egotian | [Frontend Dev] |
@@ -32,22 +27,21 @@ Chat 5 Echo: https://drive.google.com/file/d/1UUbgB_RolO0yh7CzOSfWL0YXpdU6vvCE/v
 - Critical Thinking  
 **Skills we need to learn/acquire:**
 -  Personal Relationship Acquisition 
-- 
 
 **External resources we might need:**
 - Database (MongoDB or SQL) - Status: Free database access should be sufficient
-- Live Map -some sort of map api
+- Live Map - some sort of map api
 
 
 ### Team Availability for TA Meetings
 
-**Week of [Date]:**
+**Week of 11/16:**
 
 _List all time slots when the ENTIRE team can meet with a TA. Use Eastern Time. Format: Day, Time-Time_
 
-- Monday: 12-1:45, 3:15-4:30, 6:00-10:00
-- Tuesday: 9-10 am, after 9 pm
-- Wednesday: After 7
+- Monday: 12-1:45pm, 3:15-4:30pm, 6:00-10:00pm
+- Tuesday: 9-10am, 9-10pm
+- Wednesday: 7-10pm
 - Thursday: [Not available]
 - Friday: [Unavailable]
 
@@ -63,9 +57,9 @@ _List all time slots when the ENTIRE team can meet with a TA. Use Eastern Time. 
 
 ### Project Connection to Round 4
 
-**Round 4 Decision**: [STAYING]
+**Round 4 Decision**: STAYING
 
-**Original idea from**: [Round 1/2/3 author(s) - names/pennkeys]
+**Original idea from**:
 Round 1: Braden Johnson: bradenj
 Round 2: Braden Johnson bradenj, Simon Roling rolings, Jackson Gold: jgold23
 Round 3: Braden Johnson (bradenj), Simon Roling (rolings), Jackson Gold (jgold23), Eitan Gotian (egotian), Kieran Chetty (chettyk)
@@ -74,11 +68,7 @@ Round 3: Braden Johnson (bradenj), Simon Roling (rolings), Jackson Gold (jgold23
 **How the idea evolved**: 
 We refined our scope and also our incentive design for the final proposal. The first key thing was reducing scope to just a few food trucks in University City/Penn’s campus. This gives us the ability to easily access the trucks if we need to flyer and also to talk to truck owners to attempt to partner with them for the gold standard data we described. For improving incentive design, core things discussed were making the process as smooth as possible (saving standard data, minimizing clicks, etc.) for the users and potentially implementing a reputation system like the Transit app.
 
-[2-3 sentences describing the evolution]
-
 ### Problem Statement
-
-_Refined from your Round 4 decision_
 
 Students and staff around Penn/University City lack **reliable, live information** on whether food trucks are currently open, closed, or moved. Existing sources are stale or manual. We’ll crowd-verify status updates and incorporate owner overrides to provide users with a way to find their lunch on campus easily and reliably.
 
@@ -109,6 +99,10 @@ A lightweight web app showing **live, crowd-verified** food-truck status around 
 
 _Required: Include a visual flow diagram showing the major components/stages of your project_
 
+**Link**: https://docs.google.com/drawings/d/1Pizk5Ykq2TY8luoOL-mllAUo22yPElZ9EqN2NV8ezbo/edit?usp=sharing
+
+
+
 **Flow diagram location**: [e.g., `docs/flow-diagram.pdf` or embed image here]
 
 Your flow diagram MUST clearly show:
@@ -121,19 +115,16 @@ Your flow diagram MUST clearly show:
 
 **If you haven't created it yet**: Describe in words the major components and their relationships:
 
-1. [Component 1] → [Component 2] → [Component 3] ...
-
 ### Major System Components
 
 _List all major components with point values (1-4) indicating implementation complexity. Total should be 15-20 points._
 
 | Component | Description | Points | Owner(s) | Dependencies |
 |-----------|-------------|--------|----------|--------------|
-| [Component 1] | [Brief description] | [1-4] | [Name(s)] | [What must be done first] |
-| [Component 2] | [Brief description] | [1-4] | [Name(s)] | [What must be done first] |
-| [Component 3] | [Brief description] | [1-4] | [Name(s)] | [What must be done first] |
-| [Component 4] | [Brief description] | [1-4] | [Name(s)] | [What must be done first] |
-| [Component 5] | [Brief description] | [1-4] | [Name(s)] | [What must be done first] |
+| Food Truck Map | Map showing truck locations | [4] | [Braden, Jackson] | [figure out what api to use to get the best possible map for our system] |
+| Food Truck Page | Shows info about trucks (hours, location(s), Venmo, menu) | [4] | [Simon, Jackson] | Initial (manual) scouting of food trucks to determine what to include |
+| Login Screen/account creation for food truck owners] | Owners need to be able to login to verify information about their businesses.| 4| Simon & Eitan |Determination of database info |
+| Input Location Page | Log the location of a truck now or retroactively [4] | [Braden and Eitan] | [Generate sufficient user base] |
 
 **Total Points**: [Sum - should be 15-20]
 
@@ -169,7 +160,7 @@ _Continue as needed..._
 
 ### QC Strategy Overview
 
-We apply Gold Standard verification, Majority Voting, and Expert review to make sure all information displayed on StreetEats is as accurate as possible. We will generate Gold Standard data and Expert review by forming relationships with food truck owners. We will  use this to output a normalized label, a **quality_score ∈ [0,1]**, and **flag** underperforming usersfor admin review.
+We apply Gold Standard verification, Majority Voting, and Expert review to make sure all information displayed on StreetEats is as accurate as possible. We will generate Gold Standard data and Expert review by forming relationships with food truck owners. We will use this to output a normalized label, a **quality_score ∈ [0,1]**, and **flag** underperforming users for admin review.
 
 ### Specific QC Mechanisms
 
@@ -183,9 +174,9 @@ We apply Gold Standard verification, Majority Voting, and Expert review to make 
 
 **Additional mechanisms**:
 - [X] Gold standard questions
-  - _How many? How distributed? Pass/fail criteria?_
-- [ ] Majority voting across multiple workers
-  - _How many workers per task? Tie-breaking?_
+  - 3 per user. Distributed randomly from a set
+- [X] Majority voting across multiple workers
+  - Majority votes
 - [ ] Attention checks
   - _What types? How often?_
 - [ ] Reputation system
@@ -225,7 +216,6 @@ _Walk through a concrete example of your QC module in action_
 ### Aggregation Strategy Overview
 
 [Describe your aggregation approach in 2-3 paragraphs. How will you combine multiple crowd contributions?]
-We use a **weighted/majority** approach over a short rolling window (≈10–15 minutes). Each QC’d update contributes a vote weighted by its `quality_score` and freshness; owner overrides count as high-weight votes with expiration. This yields a single status (here/closed/moved) plus confidence.
 
 
 
@@ -770,4 +760,3 @@ Then:
 - Should be in the root of your GitHub organization
 
 **Submission deadline**: Thursday, Nov. 13 at 11:59PM ET
-
