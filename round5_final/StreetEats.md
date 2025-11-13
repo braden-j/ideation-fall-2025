@@ -13,7 +13,7 @@
 | Name | PennKey | Primary Role(s) | Secondary Skills |
 |------|---------|----------------|------------------|
 | Braden Johnson | bradenj | Full-Stack | API Integration |
-| Jackson Gold | jgold23 | [e.g., Backend Dev, API Integration] | [e.g., JavaScript, Database Design] |
+| Jackson Gold | jgold23 | AI/Data | Database |
 | Simon Roling | rolings | [ML/Data] | [Front end] |
 | Eitan Gotian | egotian | [Frontend Dev] |
 
