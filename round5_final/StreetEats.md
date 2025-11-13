@@ -101,6 +101,7 @@ _Required: Include a visual flow diagram showing the major components/stages of 
 
 **Link**: https://docs.google.com/drawings/d/1Pizk5Ykq2TY8luoOL-mllAUo22yPElZ9EqN2NV8ezbo/edit?usp=sharing
 
+<img width="1684" height="862" alt="StreetEats - Flow Chart" src="https://github.com/user-attachments/assets/a4f934d0-e15a-46c8-975b-219d53efca4d" />
 
 
 **Flow diagram location**: [e.g., `docs/flow-diagram.pdf` or embed image here]
