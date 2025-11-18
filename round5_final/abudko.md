@@ -1,7 +1,8 @@
+
 # Final Project Proposal: Auralynx
 
 **Team Name**: Auralynx  
-**Submission Date**: [Date]  
+**Submission Date**: 11/17/2025  
 **GitHub Organization**: [Link](https://github.com/Aurallynx)
 
 ---
@@ -10,34 +11,39 @@
 
 ### Team Members
 
-| Name            | PennKey | Primary Role(s)                 | Secondary Skills                |
-|-----------------|---------|---------------------------------|---------------------------------|
-| Alexander Budko | abudko  | Full-Stack Dev + DevOps        | K8s, React, Python, Docker      |
-| Anton Bakhurov  | abakh   | Aggregation + Analysis         | Statistics, ML, Design          |
-| [Name 3]        | [penn3] | QC Module + Experiment Design  | [e.g., R, Stats, UX]            |
-| [Name 4]        | [penn4] | Data Pipeline + Visualizations | [e.g., Python, dashboards]      |
-| [Name 5]        | [penn5] | Recruitment + UX Copy          | [e.g., Figma, communication]    |
+| Name                    | PennKey | Primary Role(s)                 | Secondary Skills                           |
+|-------------------------|---------|---------------------------------|--------------------------------------------|
+| Alexander Budko         | abudko  | Full-Stack Dev + DevOps        | K8s, React, Python, Docker                 |
+| Anton Bakhurov          | abakh   | Aggregation + Analysis         | Statistics, ML, Design                     |
+| Sofiia Kikaleishvilli   | sofiia  | QC Module + Experiment Design  | Math/Econ, Statistical Modeling, Analysis  |
+| Jason Gao               | jasongao| Data Pipeline + Visualizations | CS, Web Dev, React/TypeScript, APIs        |
+| Martina Bulgarelli      | mbulga  | Recruitment + UX Copy          | Finance, Communication, Outreach, Figma    |
 
 ### Team Skills Inventory
 
 **Skills we have:**
 - DevOps: Alex (abudko)
 - Full-Stack Development: Alex (abudko)
-- Python + Data Handling: Alex (abudko), Anton (abakh)
+- Python + Data Handling: Alex (abudko), Anton (abakh), Sofiia (sofiia)
+- Data Analysis + Basic ML: Anton (abakh), Sofiia (sofiia)
+- Experimental / Survey Design: Anton (abakh), Sofiia (sofiia)
+- Statistical & Economic Analysis: Sofiia (sofiia)
+- Frontend Engineering (React/TypeScript): Jason (jasongao)
+- Backend/API Engineering: Jason (jasongao), Alex (abudko)
+- Data Pipeline + Visualization (dashboards/plots): Jason (jasongao), Anton (abakh)
 - Canva / Visual Design: Anton (abakh)
-- Data Analysis + Basic ML: Anton (abakh)
-- Experiment / Survey Design: Anton (abakh)
+- Finance + Metrics Storytelling: Martina (mbulga)
+- Recruitment & Outreach: Martina (mbulga)
+- UX Copy & Communication: Martina (mbulga)
 - Project Management + Coordination: Alex & Anton
-- [Skill]: [TBD – assign to Name3/4/5]
-- [Skill]: [TBD – assign to Name3/4/5]
 
 **Skills we need to learn/acquire:**
 - **Data Aggregation Design** – Primary: Anton  
   Define robust schemas for storing/combining multiple guesses per clip.
 - **Cursor-based Development Workflow** – Primary: Alex  
   Use AI-assisted tooling to keep velocity high with a small dev team.
-- **[Skill 3]** – [TBD person]  
-  e.g., Lightweight audio feature extraction so we can compare crowd guesses with simple acoustic features.
+- **Lightweight Audio Feature Extraction** – Primary: Jason  
+  Implement simple acoustic feature extraction so we can compare crowd guesses with basic audio features (e.g., pitch range, speaking rate).
 
 **External resources we might need:**
 - Cursor – Status: Acquired, Cost: Free  
@@ -46,15 +52,15 @@
 
 ### Team Availability for TA Meetings
 
-**Week of [Date]:**
+**Week of 11/17/2025:**
 
 _List all time slots when the ENTIRE team can meet (Eastern Time):_
 
-- Monday: [e.g., 3:00 PM – 5:00 PM]
-- Tuesday: [e.g., 10:00 AM – 12:00 PM]
-- Wednesday: [e.g., 4:00 PM – 6:00 PM]
-- Thursday: [Not available]
-- Friday: [e.g., 1:00 PM – 3:00 PM]
+- Monday: Not available  
+- Tuesday: 2:00 PM – 5:00 PM  
+- Wednesday: Not available  
+- Thursday: 2:00 PM – 5:00 PM  
+- Friday: Not available  
 
 **Preferred meeting duration**: 30 min  
 **Meeting format preference**: Zoom  
@@ -140,13 +146,13 @@ The flow diagram will show:
 
 ### Major System Components
 
-| Component               | Description                                                          | Points | Owner(s) | Dependencies                   |
-|-------------------------|----------------------------------------------------------------------|--------|----------|--------------------------------|
-| Speaker Web UI          | Interface to record/upload clips and view feedback                  | 3      | Alex     | Backend API, aggregation       |
-| Crowd Task UI           | Page where workers listen to clips and submit guesses               | 3      | Alex     | Backend API, task creation     |
-| Backend API & Storage   | Handles clip upload, task assignment, and metadata storage          | 3      | Alex     | DB schema, infra               |
-| QC Module               | Filters low-quality responses using attention checks & stats        | 3      | Anton    | Labeled responses from backend |
-| Aggregation + Analytics | Aggregates filtered responses, computes distributions & metrics     | 3      | Anton    | QC outputs                     |
+| Component               | Description                                                          | Points | Owner(s)     | Dependencies                   |
+|-------------------------|----------------------------------------------------------------------|--------|--------------|--------------------------------|
+| Speaker Web UI          | Interface to record/upload clips and view feedback                  | 3      | Alex, Jason  | Backend API, aggregation       |
+| Crowd Task UI           | Page where workers listen to clips and submit guesses               | 3      | Alex, Jason  | Backend API, task creation     |
+| Backend API & Storage   | Handles clip upload, task assignment, and metadata storage          | 3      | Alex, Jason  | DB schema, infra               |
+| QC Module               | Filters low-quality responses using attention checks & stats        | 3      | Anton, Sofiia| Labeled responses from backend |
+| Aggregation + Analytics | Aggregates filtered responses, computes distributions & metrics     | 3      | Anton        | QC outputs                     |
 
 **Total Points**: 15  
 
@@ -758,9 +764,9 @@ If recruitment is insufficient:
 
 - **Milestone**: Main data collection + Analysis
 - **Tasks**:
-  - [ ] Main recruitment push – [TBD team member]  
-  - [ ] Finalize visualizations & admin dashboard – Alex  
-  - [ ] Run full analysis & draft results – Anton  
+  - [ ] Main recruitment push – Martina  
+  - [ ] Finalize visualizations & admin dashboard – Jason  
+  - [ ] Run full analysis & draft results – Anton, Sofiia  
   - [ ] Integrate methods/results into final write-up – team  
 - **Deliverable**: Final dataset, analysis code, polished demo.
 
@@ -771,8 +777,9 @@ If recruitment is insufficient:
 2. Crowd task UI must be functional before large-scale recruitment.  
 
 **Parallel work**:
-- Alex: Frontend + backend infrastructure  
-- Anton: QC + aggregation logic on synthetic/sample data  
+- Alex & Jason: Frontend + backend infrastructure  
+- Anton & Sofiia: QC + aggregation logic, analysis on synthetic/sample data  
+- Martina: Recruitment and communication materials  
 
 **Integration points**:
 - [Date 1]: QC + aggregation integrated into backend.  
@@ -994,18 +1001,18 @@ We commit to:
 
 ## Submission Checklist
 
-- [ ] Completed all sections of this template  
-- [ ] Provided team availability for TA meetings  
-- [ ] Listed team skills and learning needs  
-- [ ] Included point values for all components (total 15–20)  
-- [ ] Described detailed implementation timeline  
-- [ ] Identified risks and mitigation strategies  
-- [ ] Had all team members review and sign  
+- [X] Completed all sections of this template  
+- [X] Provided team availability for TA meetings  
+- [X] Listed team skills and learning needs  
+- [X] Included point values for all components (total 15–20)  
+- [X] Described detailed implementation timeline  
+- [X] Identified risks and mitigation strategies  
+- [X] Had all team members review and sign  
 
 Then:
 
 - [ ] Set up GitHub repository with required directory structure  
-- [ ] Prepared questions for teaching staff  
+- [X] Prepared questions for teaching staff  
 - [ ] Created flow diagram showing QC and aggregation modules  
 - [ ] Created mockups for all user-facing interfaces  
 - [ ] Added sample input/output data for QC module  
